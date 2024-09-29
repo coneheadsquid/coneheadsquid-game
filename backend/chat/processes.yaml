@@ -2,24 +2,24 @@
 ## This file is used to configure the AoForm package
 ## For more information, visit https://github.com/Autonomous-Finance/aoform
 
-- name: squid-server-test
+- name: squid-chat-test
   file: build/process.lua
   prerun: ./src/reset_modules.lua
   scheduler: _GQ33BkPtZrqxA84vM8Zk-N2aO0toNNu_C-l-rawrBA
   module: GYrbbe0VbHim_7Hi6zrOpHQXrSQz07XNtwCnfbFo2I0
   tags:
     - name: Name
-      value: squid-server-test
+      value: squid-chat-test
     - name: Powered-By
       value: coneheadsquid
 
 ## 1-build
-## cd  M:\AO\AOreact\test-ao\backend\src
-## lua M:\AO\aoApp\lua-amalg-master\src\amalg.lua -s process.lua -o ../build/process.lua lib.db utils.db
+## cd  M:\AO\AOreact\test-ao\backend\chat\src
+##  lua M:\AO\aoApp\lua-amalg-master\src\amalg.lua -s process.lua -o ../build/process.lua lib.db utils.db
 
 
 ## 2-deploy
-## cd  M:\AO\AOreact\test-ao\backend
+## cd  M:\AO\AOreact\test-ao\backend\chat
 ## npx aoform apply
 ## https://www.ao.link/#/entity/processID
 

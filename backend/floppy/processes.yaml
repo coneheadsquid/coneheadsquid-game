@@ -1,0 +1,20 @@
+## AoForm Configuration
+## This file is used to configure the AoForm package
+## For more information, visit https://github.com/Autonomous-Finance/aoform
+
+- name: squid-floppy-test
+  file: build/token2.lua
+
+  tags:
+    - name: Name
+      value: squid-floppy-test
+    - name: Powered-By
+      value: coneheadsquid
+
+
+## 1-deploy
+## cd  M:\AO\AOreact\test-ao\backend\floppy
+## npx aoform apply
+## https://www.ao.link/#/entity/processID
+
+##  Send({ Target = "processID", Action = "Tickets-Info" })

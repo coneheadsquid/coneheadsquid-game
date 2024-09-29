@@ -35,7 +35,63 @@
  
     --radius: 0.5rem;
   }
- 
+  .crop-text {
+    width: 60px;         /* Set a fixed width */
+    white-space: nowrap;  /* Prevents text from wrapping to the next line */
+    overflow: hidden;     /* Hides the overflow text */
+    text-overflow: ellipsis; /* Adds the ellipsis (...) */
+    display: inline-block;  /* Ensures the CSS works on inline elements like <span> */
+    text-align:left;
+  }
+
+  .chat-box {
+    width: 300px;
+    height: 250px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .sent {
+    align-self: flex-end;
+    margin-right:50px;
+  }
+
+  .received {
+    align-self: flex-start;
+    margin-left:50px;
+
+
+  }
+
+  .message-bubble {
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0084ff;
+    color: white;
+    word-wrap: break-word;
+  }
+
+  .received .message-bubble {
+    background-color: silver;
+    color: black;
+  }
+
+  .timestamp {
+    font-size: 0.75em;
+    margin-top: 5px;
+    color: #999;
+  }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
