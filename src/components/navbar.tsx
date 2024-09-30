@@ -2,7 +2,7 @@ import { Link, useNavigate} from "react-router-dom";
 import { Button } from "@/components/ui/button"
 import React, {SVGProps, useEffect, useState} from 'react';
 import { ConnectButton, useConnection } from "@arweave-wallet-kit/react";
-import squid from '/coneheadsquidsprite.gif';
+import squid from '/coneheadsquidsombre.svg';
 import tcet from '/tcet.png';
 import floppy from '/floppy.png';
 import ChatComponent from "@/components/chat/chat.tsx";
@@ -83,7 +83,7 @@ export function Navbar() {
     //TODO call AOS coinCollect to send message
     console.log(nb+"Coin collected sent to reactjs function!!!!!!!!!!")
   }
-  window.coinCollect= coinCollect
+  window.coinCollect= coinCollect;
   const getTickets = async () => {
     try {
       // Await the result of the dry run
