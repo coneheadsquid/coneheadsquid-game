@@ -1,6 +1,6 @@
 ## Project Overview
 
-This project integrates **Godot 4**, **ReactJS**, **Arweave**, and **AOS (An Operating System for AO: The Hyper-Parallel Computer)** to create a decentralized game with hyper-parallel computing capabilities and permanent data storage.
+This project integrates **Godot 4**, **ReactJS**,  and **AOS (the Operating System for AO: The Hyper-Parallel Computer on **Arweave**,)** to create a decentralized game with hyper-parallel computing capabilities and permanent data storage.
 
 ### Key Technologies
 - **Godot 4**: Handles game logic, rendering, and interacts with the browser using `JavaScriptBridge`.
