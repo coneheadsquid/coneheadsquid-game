@@ -78,8 +78,12 @@ export function Navbar() {
     }
   };
 
-
-
+  const  coinCollect= async (nb) =>{
+    setUserFloppy(userFloppy+nb)
+    //TODO call AOS coinCollect to send message
+    console.log(nb+"Coin collected sent to reactjs function!!!!!!!!!!")
+  }
+  window.coinCollect= coinCollect
   const getTickets = async () => {
     try {
       // Await the result of the dry run

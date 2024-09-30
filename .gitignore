@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 /backend/test-wallet.json
 /backend/.env
+/backend/chat/.env

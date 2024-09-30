@@ -16,8 +16,8 @@ function getUserAddressOld() {
 }
 
 
-
-
+let floppy=0
+window.floppy=floppy
 
 window.getUserAddress2 = getUserAddressOld;
 
@@ -26,9 +26,7 @@ function sendmessage(message) {
 	console.log("sending message : "+ message)
 	return message;
 }
-function coinCollect(nb) {
-	console.log(nb+"Coin collected sent to reactjs function!!!!!!!!!!")
-}
+
 
 
 var Godot = (() => {
