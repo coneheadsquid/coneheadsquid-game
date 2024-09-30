@@ -4,8 +4,8 @@ This project integrates **Godot 4**, **ReactJS**,  and **AOS (the Operating Syst
 
 ### Key Technologies
 - **Godot 4**: Handles game logic, rendering, and interacts with the browser using `JavaScriptBridge`.
-- **ReactJS**: Frontend UI that communicates with Godot and exposes JavaScript functions like `window.userAddress` or soon checkNbOfTikets() and collectFLOPPY() . the front-end communicates wth AOS for leaderboard, chat functions
-- **Arweave**: Permanent decentralized storage using **arDrive** for game assets and user chat toen data.
+- **ReactJS**: Frontend UI that communicates with Godot and exposes JavaScript functions like `window.userAddress` or soon checkNbOfTikets() and collectFLOPPY() . the front-end communicates with AOS for processes as leaderboard, chat functions
+- **Arweave**: Permanent decentralized storage using **arDrive** for game assets.
 - **AOS**: Hyper-parallel computing platform to offload heavy computations across decentralized nodes.
 
 ### Architecture Overview
