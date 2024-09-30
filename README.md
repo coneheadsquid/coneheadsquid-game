@@ -34,6 +34,7 @@ This project integrates **Godot 4**, **ReactJS**,  and **AOS (the Operating Syst
 
 This project demonstrates how modern web technologies, decentralized storage, and parallel computing can be integrated to create a scalable, decentralized game with persistent data and high performance.
 
+![alt text](https://github.com/coneheadsquid/coneheadsquid-game/blob/master/Screenshot.jpg)
 
 ----------------------------------------------------------------------------------------
 # React + Vite + TypeScript Template (react-vite-ui)
