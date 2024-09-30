@@ -4,18 +4,19 @@ This project integrates **Godot 4**, **ReactJS**,  and **AOS (the Operating Syst
 
 ### Key Technologies
 - **Godot 4**: Handles game logic, rendering, and interacts with the browser using `JavaScriptBridge`.
-- **ReactJS**: Frontend UI that communicates with Godot and exposes JavaScript functions like `window.userAddress`.
-- **Arweave**: Permanent decentralized storage using **arDrive** for game assets and user data.
+- **ReactJS**: Frontend UI that communicates with Godot and exposes JavaScript functions like `window.userAddress` or soon checkNbOfTikets() and collectFLOPPY() . the front-end communicates wth AOS for leaderboard, chat functions
+- **Arweave**: Permanent decentralized storage using **arDrive** for game assets and user chat toen data.
 - **AOS**: Hyper-parallel computing platform to offload heavy computations across decentralized nodes.
 
 ### Architecture Overview
 1. **Godot 4 Backend**: 
    - Game logic, UI updates, and score management are handled in Godot. The game interacts with the ReactJS frontend using `JavaScriptBridge` to fetch user information (e.g., collecting coin, ) and other data.
-   - Example: Godot calls a JavaScript function in the browser to fetch `window.userAddress` (soon calling collect coins) and stores it in a GDScript variable.
+   - Example: Godot calls a JavaScript function in the browser to fetch `window.userAddress` (soon calling aos methods or soon checkNbOfTikets() and collectFLOPPY()) and stores it in a GDScript variable.
 
 2. **ReactJS Frontend**: 
    - Powers the UI, connecting with the user and blockchain.
-   - React interacts with Arweave to store game-related data and assets permanently, ensuring decentralized access and integrity.
+   -  Communicates wth AOS for leaderboard, chat function
+   - cpde project uploaded on Arweave to store game-related data and assets permanently, ensuring decentralized access and integrity.
    - ReactJS exposes necessary browser-side JavaScript functions that Godot accesses to fetch data like user addresses.
 
 3. **Arweave Storage**: 
@@ -27,12 +28,14 @@ This project integrates **Godot 4**, **ReactJS**,  and **AOS (the Operating Syst
    - AOS enables scalability by distributing game-related tasks across multiple nodes, which is particularly useful for handling large-scale or resource-intensive processes.
 
 ### Key Features
-- **Godot-ReactJS Integration**: Using `JavaScriptBridge`, Godot seamlessly interacts with the browser, fetching data like wallet addresses from ReactJS and updating the game state.
+- **Godot-ReactJS Integration**: Using `JavaScriptBridge`, Godot seamlessly interacts with the browser, fetching data like wallet addresses or aos methods from ReactJS and updating the game state.
 - **Decentralized Storage**: All game assets and user data are stored on Arweave, leveraging the immutability and persistence of decentralized storage.
 - **Hyper-Parallel Execution**: AOS enables the game to run complex operations in parallel, improving efficiency and performance.
 
 This project demonstrates how modern web technologies, decentralized storage, and parallel computing can be integrated to create a scalable, decentralized game with persistent data and high performance.
 
+
+----------------------------------------------------------------------------------------
 # React + Vite + TypeScript Template (react-vite-ui)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Dan5py/react-vite-ui/blob/main/LICENSE)
