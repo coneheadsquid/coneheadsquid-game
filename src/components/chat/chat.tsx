@@ -97,6 +97,7 @@ const ChatComponent: React.FC = () => {
                             <small className="crop-text" style={{ display: 'inline' }}>{msg.userid === userAddress ? 'you' : msg.userid}</small>
                             <div className="message-bubble">
                                 <p>{msg.message}</p>
+
                             </div>
                             <small className="timestamp" style={{ display: 'inline' }}>{formatTimestamp(msg.timestamp / 1000, true)} </small>
                         </div>

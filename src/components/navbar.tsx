@@ -26,6 +26,7 @@ export function Navbar() {
   const ticketsProcessId = "IpPX7yctFQcbFdikpY7_KGEuETSuD7vs6IjuDMiDbgc";
   let ticketsResult =[];
   // Async function to connect and get the user address
+
   const fetchUserAddress = async () => {
     try {
       // Connect to the wallet
@@ -77,6 +78,8 @@ export function Navbar() {
     }
   };
 
+
+
   const getTickets = async () => {
     try {
       // Await the result of the dry run
@@ -126,6 +129,11 @@ export function Navbar() {
     }
   }, [userAddress]); // Runs every time userAddress changes
 
+  useEffect(() => {
+
+
+
+  }, []);
 
  // Dependency array ensures this effect runs only once on mount
 

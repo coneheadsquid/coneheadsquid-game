@@ -24,6 +24,10 @@ window.getUserAddress2 = getUserAddressOld;
 
 function sendmessage(message) {
 	console.log("sending message : "+ message)
+	return message;
+}
+function coinCollect(nb) {
+	console.log(nb+"Coin collected sent to reactjs function!!!!!!!!!!")
 }
 
 
